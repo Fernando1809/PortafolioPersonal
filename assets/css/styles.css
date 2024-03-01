@@ -603,5 +603,5 @@ img {
 }
 
 .nav__link:hover {
-  color: cyan; /* Color al pasar el ratón por encima */
+  color: red; /* Color al pasar el ratón por encima */
 }
