@@ -87,8 +87,7 @@ actualizarEdad();
 setInterval(actualizarEdad, 1000 * 60 * 60 * 24 * 365); // Ejecuta la función cada año
 
 function descargarArchivo() {
-    var url = '.\cv\CV.pdf';
-  
+    var url = './cv/CV.pdf';
     var link = document.createElement('a');
     link.href = url;
     link.download = 'CV.pdf';
@@ -99,6 +98,8 @@ function descargarArchivo() {
   
     document.body.removeChild(link);
   }
+  
+  document.getElementById('downloadButton').addEventListener('click', descargarArchivo);
   window.onload = function() {
     document.body.classList.add('dark-mode');
 };
