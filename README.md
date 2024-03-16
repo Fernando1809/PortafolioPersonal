@@ -6,24 +6,9 @@
 
 En este portafolio, encontrarás una muestra de mi trabajo y experiencia en el campo de la programación y el desarrollo web. Soy un apasionado por la tecnología y me encanta crear soluciones innovadoras que resuelvan problemas y mejoren la vida de las personas.
 
-### Proyectos Destacados
-
-- **Proyecto A**: Descripción breve del proyecto A y su relevancia.
-- **Proyecto B**: Descripción breve del proyecto B y su relevancia.
-- **Proyecto C**: Descripción breve del proyecto C y su relevancia.
-
-## Experiencia
-
-A lo largo de mi carrera, he tenido la oportunidad de trabajar en diversas empresas y proyectos, lo que me ha permitido desarrollar habilidades sólidas en áreas como el desarrollo web, la programación y la gestión de proyectos.
-
-### Experiencia Laboral
-
-- **Empresa X**: Desarrollador web (2020-2022)
-- **Empresa Y**: Programador junior (2018-2020)
-
 ## Educación
 
-- **Licenciatura en Ingeniería Informática**: Universidad Z (2014-2018)
+- **Ingenieria en  Sistemas y Redes Informarricas**: Universidad Gerardo Barrios (2019-Actualidad)
 
 ## Habilidades
 
