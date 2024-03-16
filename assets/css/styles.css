@@ -45,12 +45,12 @@ html {
 
 body {
   background-color: #1a1a1a; /* Color de fondo oscuro */
-  color: #ffffff; /* Color de texto claro */
+  color: red; /* Color de texto claro */
 }
 
 /* Estilos para los enlaces */
 a {
-  color: #ffffff; /* Color de enlaces */
+  color: red; /* Color de enlaces */
 }
 
 /* Estilos para el menú de navegación */
@@ -206,7 +206,7 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: red;
 }
 .home__social-icon:hover {
   color: purple;
@@ -515,6 +515,10 @@ img {
   color: #777BB4;
   /* Color morado de PHP */
 }
+.clients .mysql i:hover {
+  color: blue; /* Cambia el color del ícono a azul cuando se hace hover */
+}
+
 .rounded-img {
   border-radius: 50%;
 }
