@@ -609,3 +609,7 @@ img {
 .nav__link:hover {
   color: red; /* Color al pasar el ratón por encima */
 }
+.home__container {
+  display: flex;
+  align-items: center;
+}
