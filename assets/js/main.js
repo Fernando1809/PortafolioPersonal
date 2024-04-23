@@ -87,19 +87,32 @@ actualizarEdad();
 setInterval(actualizarEdad, 1000 * 60 * 60 * 24 * 365); // Ejecuta la función cada año
 
 function descargarArchivo() {
-    var url = './cv/CV.pdf';
+    var language = document.documentElement.lang;
+    var url;
+    if (language === 'en') {
+        url = './cv/CVI.pdf'; // Cambia 'CV_english.pdf' con el nombre real del CV en inglés
+    } else {
+        url = './cv/CV.pdf'; // Ruta normal del CV en español
+    }
     var link = document.createElement('a');
     link.href = url;
     link.download = 'CV.pdf';
-  
     document.body.appendChild(link);
-  
     link.click();
-  
     document.body.removeChild(link);
-  }
-  
+}
+function hideTranslateBar() {
+    const lang = document.documentElement.lang;
+    if (lang === 'en') {
+        document.getElementById('google_translate_element').style.display = 'none';
+    }
+}
+
+// Call the function when the page is loaded
+window.onload = hideTranslateBar;
+
   document.getElementById('downloadButton').addEventListener('click', descargarArchivo);
   window.onload = function() {
     document.body.classList.add('dark-mode');
 };
+
