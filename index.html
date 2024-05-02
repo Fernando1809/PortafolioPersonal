@@ -12,8 +12,8 @@
     <title>Mi portafolio | FG</title>
 </head>
 
-<body>
-    <header class="l-header">
+<body class="dark-mode">
+        <header class="l-header">
         <nav class="navbar bg-body-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -25,6 +25,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">Sobre Mi</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li>
                     <li class="nav__item"><a href="#clients" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#testimonios" class="nav__link">Testimonios</a></li>
                     <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
                 </ul>
             </div>
@@ -38,17 +39,8 @@
                 <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Fernando,</span><br>Programador
                     <br>Front End
                     <div class="row" id="google_translate_element"></div>
-                    <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                            new google.translate.TranslateElement({
-                                pageLanguage: 'es',
-                                includedLanguages: 'en',
-                            }, 'google_translate_element');
-                        }
-                    </script>
-                    <script type="text/javascript" center
-                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-                    </script>
+                    <button id="translateButton" class="btn btn-outline-danger" onclick="location.href='./IndexEN.html';">Traducir Página</button>
+                </nav>
                     <button id="downloadButton" class="btn btn-outline-danger">Descargar CV</button>
                     <h5>Si puedes imaginarlo, puedes programarlo
                         <br>
@@ -211,6 +203,50 @@
                 </div>
             </div>
         </section>
+        <section class="clients my-5" id="testimonios">
+            <h2 class="my-4 text-center">Testimonios</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark h-100">
+                            <div class="card-img-container" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;">
+                                <img src="./IMG/B.jpg" class="card-img-top" style="width: 100%; height: 100%; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Brandon Smith Lovo Rodríguez</h3>
+                                <h6>Licenciado en Enfermeria</h6>
+                                <p class="card-text">Puedo describirlo como una persona trabajadora, comprometida, Constanate y responsablle con su trabajo.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark h-100">
+                            <div class="card-img-container" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;">
+                                <img src="./IMG/j.jpg" class="card-img-top" style="width: 100%; height: 100%; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Juan Carlos Mejia</h3>
+                                <h6>Ingeniero en Sistemas y Redes Informáticas</h6>
+                                <p class="card-text">Lo que más me impresiona es su actitud amable y su disposición para trabajar. No tengo la menor duda en recomendarlo ya que tambien se presta para ayudar a los demas y esta abierto a recibir sugerencias de mejora en su trabajo.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark h-100">
+                            <div class="card-img-container" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;">
+                                <img src="./I" class="card-img-top" style="width: 100%; height: 100%; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-title"></h1>
+                                <p class="card-text">Abcdefghijklmñopqrstuvwxyz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
 
     </main>
 
@@ -225,6 +261,8 @@
         <div class="copyright text-center mt-3">
             <p>
                     © <span id="currentYear"></span> Todos los derechos reservados.
+                    <br>
+                    Fernando Gonzalez
             </p>
             </div>
     </footer>

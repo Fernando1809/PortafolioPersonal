@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mi portafolio | FG</title>
+</head>
+
+<body>  
+    <style>
+        body {
+    background-color: #000;
+    color: #fff; /* Cambiar el color del texto a blanco para una mejor legibilidad */
+}
+
+    </style>
+    <header class="l-header">
+        <nav class="navbar bg-body-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                </a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link ">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#testimonios" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Fernando,</span><br>Front End Developer
+                    <br>
+                    <div class="row" id="google_translate_element"></div>
+                    <button id="translateButton" class="btn btn-outline-danger" onclick="location.href='./Index.html';">Translate Page</button>
+                    <button id="downloadButton" class="btn btn-outline-danger">Download CV</button>
+                    <h5>If you can imagine it, you can program it
+                        <br>
+                        - Alejandro Taboada
+                    </h5>
+                </h1>
+            </div>
+                    
+            <div class="home__social">
+                <a target="_blank" href="https://www.linkedin.com/in/fernando-gonz%C3%A1lez-05b297232/"
+                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:ferandre1718.frg@gmail.com" class="home__social-icon"><i class='bx bxl-gmail'></i></a>
+                <a href="https://github.com/Fernando1809" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+    
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <image href="./IMG/LOGO.png" x="0" y="-145" width="479" height="467" />                    
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </main>
+    
+        
+
+    <section class="about section " id="about">
+        <h2 class="my-4 text-center">About Me</h2>
+    
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="./IMG/FG2.png" alt="">
+            </div>
+    
+            <div>
+                <h2 class="about__subtitle">Hi, my name is Fernando Gonzalez</h2>
+                <p class="about__text">I am <span class="EdadFG"></span> years old and I am immersed in the university experience, studying a degree in Systems and Network Engineering at Gerardo Barrios University. My fascination with technology is especially reflected in the fields of networking and electronics, as well as my hobby in FrontEnd programming.
+                    <br>
+                    Understanding these topics well helps me a lot in my studies. I always try to use what I learn in practice to improve my skills and contribute to the advancement of technology.
+                    <br>
+                    I enjoy Korean culture, especially K-pop and K-dramas, and I also like video games. I like to support others and listen to them.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="work section" id="work">
+        <h2 class="my-4 text-center">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 my-3">
+                    <div class="card text-bg-dark mb-3 h-100">
+                        <img src="./IMG/Bubblepets.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h1 class="card-title">BubblePets</h1>
+                            <p class="card-text">
+                                BubblePets is like Tinder, but for pets. It allows pet owners to find furry companions based on shared interests. Users create profiles for their pets, swipe right to express interest, and arrange meetings. A fun and social way to connect pet lovers.</p>
+                            <hr>
+                            <p class="card-text">Role played: Designer </p>
+                            <a href="https://github.com/wilsongutierrez-01/Bubble_Pet_xForce.git"
+                                class="btn btn-outline-danger" target="_blank"> View Repository</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-lg-4 my-3">
+                    <div class="card text-bg-dark mb-3 h-100">
+                        <img src="./IMG/DriveEduca.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h1 class="card-title">DriveEduca</h1>
+                            <p class="card-text">
+                                DriveEduca is dedicated to promoting good practices in road education through its website. It includes forums, chat, an interactive menu, contact platforms, and a search engine to access specific information. It offers an educational test and an interactive game to raise awareness about the risks of poor road education, thus promoting a safer road culture.</p>
+                            <hr>
+                            <p class="card-text">Role played: Front End Programmer</p>
+                            <a href="https://github.com/Fernando1809/DriveEduca" class="btn btn-outline-danger"
+                                target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-lg-4 my-3">
+                    <div class="card text-bg-dark mb-3 h-100">
+                        <img src="./IMG/PathToy.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h1 class="card-title">BubblePets</h1>
+                            <p class="card-text">
+                                BubblePets is like Tinder, but for pets. It allows pet owners to find furry companions based on shared interests. Users create profiles for their pets, swipe right to express interest, and arrange meetings. A fun and social way to connect pet lovers.
+                            </p>
+                            <hr>
+                            <p class="card-text">Role played: Designer </p>
+                            <a href="https://github.com/wilsongutierrez-01/Bubble_Pet_xForce.git"
+                                class="btn btn-outline-danger" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="clients my-5" id="clients">
+        <div class="container text-center">
+            <h2 class="my-4">Development Environments</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 js">
+                    <i class="fab fa-js fa-3x"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-md-2 css">
+                    <i class="fab fa-css3 fa-3x"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="col-md-2 html">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="col-md-2 python">
+                    <i class="fab fa-python fa-3x"></i>
+                    <p>Python</p>
+                </div>
+                <div class="col-md-2 php">
+                    <i class="fab fa-php fa-3x"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="col-md-2 mysql">
+                    <i class="fas fa-database fa-3x"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="clients my-5" id="testimonios">
+        <h2 class="my-4 text-center">Testimonials</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card text-bg-dark h-100">
+                        <div class="card-img-container" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;">
+                            <img src="./IMG/B.jpg" class="card-img-top" style="width: 100%; height: 100%; object-fit: cover;" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Brandon Smith Lovo Rodríguez</h3>
+                            <h6>Nurse Graduate</h6>
+                            <p class="card-text">I can describe him as a hardworking, committed, constant, and responsible person with his work.</p>
+                        </div>
+                    </div>
+                </div>
+             <div class="col-md-4">
+                <div class="card text-bg-dark h-100">
+                    <div class="card-img-container" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;">
+                        <img src="./IMG/j.jpg" class="card-img-top" style="width: 100%; height: 100%; object-fit: cover;" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Juan Carlos Mejia</h3>
+                        <h6>Engineer in Systems and Computer Networks</h6>
+                        <p class="card-text">What impresses me the most is his friendly attitude and willingness to work. I have no doubt in recommending him since he is also willing to help others and open to receiving suggestions for improvement in his work.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card text-bg-dark h-100">
+                    <div class="card-img-container" style="width: 100px; height: 100px; overflow: hidden; border-radius: 50%; margin: 0 auto;">
+                        <img src="./I" class="card-img-top" style="width: 100%; height: 100%; object-fit: cover;" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h1 class="card-title"></h1>
+                        <p class="card-text">Abcdefghijklmñopqrstuvwxyz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </main>
+
+    
+<footer id="contacto" class="social-media" style="text-align: center;">
+    <h1 class="my-4 text-center">You can contact me through: </h1>
+    <a target="_blank" href="https://www.facebook.com/profile.php?id=61556443884219&mibextid=ZbWKwL"><i
+            class='bx bxl-facebook'></i></a>
+    <a target="_blank" href="https://www.instagram.com/__fherxxo__/"><i class='bx bxl-instagram'></i></a>
+    <a target="_blank" href="https://x.com/FHERXXXXO?t=zdsuiUWud4Nn0FmfmXvs1A&s=09"><i
+            class='bx bxl-twitter'></i></a>
+    <a target="_blank" href="https://wa.me/+50372201248"><i class='bx bxl-whatsapp'></i></a>
+    <div class="copyright text-center mt-3">
+        <p>
+            © <span id="currentYear"></span> All rights reserved.
+            <br>
+            Fernando Gonzalez
+        </p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/JsEN.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,19 @@
+function descargarArchivo() {
+    var url = './cv/CVI.pdf'; // Ruta del archivo PDF en español
+
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = 'CV.pdf';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
+
+document.getElementById('downloadButton').addEventListener('click', descargarArchivo);
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -85,20 +101,3 @@ actualizarEdad();
 
 // Llama a la función cada año
 setInterval(actualizarEdad, 1000 * 60 * 60 * 24 * 365); // Ejecuta la función cada año
-
-function descargarArchivo() {
-    var url = './cv/CV.pdf'; // Ruta del archivo PDF en español
-
-    var link = document.createElement('a');
-    link.href = url;
-    link.download = 'CV.pdf';
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-}
-
-document.getElementById('downloadButton').addEventListener('click', descargarArchivo);
-
