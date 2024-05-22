@@ -108,6 +108,7 @@ img {
   margin-right: var(--mb-2);
 }
 
+/* Definir correctamente el estilo para navbar fija */
 .l-header {
   width: 100%;
   position: fixed;
@@ -115,6 +116,16 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   box-shadow: 0 1px 4px #000;
+}
+
+.navbar {
+  text-align: center;
+  width: 100%;
+  z-index: 1000; /* Asegúrate de que la navbar esté por encima de otros elementos */
+}
+
+body {
+  padding-top: var(--header-height); /* Ajusta este valor según la altura de tu navbar */
 }
 
 /*===== NAV =====*/
@@ -613,3 +624,21 @@ img {
   display: flex;
   align-items: center;
 }
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card {
+  max-width: 100%;
+}
+.rounded-circle {
+  width: 100%;
+  height: auto;
+}
+.custom-caption h2, .custom-caption h4 {
+  color: black;
+}
+
