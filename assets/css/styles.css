@@ -642,3 +642,23 @@ body {
   color: black;
 }
 
+.card {
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card-text {
+  margin-bottom: 20px;
+}
+.blockquote-footer {
+  margin-top: 10px;
+}
+hr.text-white {
+  border-top: 1px solid white;
+  width: 80%;
+}
