@@ -101,3 +101,21 @@ actualizarEdad();
 
 // Llama a la función cada año
 setInterval(actualizarEdad, 1000 * 60 * 60 * 24 * 365); // Ejecuta la función cada año
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    var valid = true;
+    var inputs = this.querySelectorAll('input, textarea');
+    inputs.forEach(function(input) {
+      if (!input.value) {
+        valid = false;
+        input.classList.add('is-invalid');
+      } else {
+        input.classList.remove('is-invalid');
+      }
+    });
+
+    if (!valid) {
+      event.preventDefault();
+      alert('Por favor, complete todos los campos.');
+    }
+  });

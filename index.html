@@ -206,7 +206,8 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
               <div class="carousel-inner">
                   <div class="carousel-item active">
                       <div class="d-flex justify-content-center">
@@ -229,6 +230,13 @@
                       <div class="carousel-caption custom-caption d-none d-md-block">
                       </div>
                   </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./IMG/D1.jpg" class="d-block" style="width: 50%; height: auto;" alt="...">
+                    </div>
+                    <div class="carousel-caption custom-caption d-none d-md-block">
+                    </div>
+                </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -327,7 +335,45 @@
           </div>
         </section>
     </main>
-
+    <section>
+          <div class="templatemo_contacttitle">CONTACTO</div>
+          <div class="container">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8">
+                <form action="https://formsubmit.co/12caad11ec2019808c3e89130a656b01" method="POST" class="form-contact form-group" onsubmit="return showSuccessMessage(event)">
+                  <!-- Configuración para formsubmit.co -->
+                  <input type="hidden" name="_next" value="https://fernando1809.github.io/PortafolioPersonal/#home">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, te responderemos pronto.">
+                  <input type="hidden" name="_cc" value="ferandre1718.frg@gmail.com">
+                  <div class="row">
+                    <div class="col-sm-6 py-2">
+                      <label for="name" class="fg-grey">Nombre</label>
+                      <input type="text" class="form-control" name="Name" required id="name" placeholder="Nombre">
+                    </div>
+                    <div class="col-sm-6 py-2">
+                      <label for="email" class="fg-grey">Correo</label>
+                      <input type="email" class="form-control" name="Email" required id="email" placeholder="Correo">
+                    </div>
+                    <div class="col-12 py-2">
+                      <label for="subject" class="fg-grey">Asunto</label>
+                      <input type="text" class="form-control" name="_subject" required id="subject" placeholder="Asunto">
+                    </div>
+                    <div class="col-12 py-2">
+                      <label for="message" class="fg-grey">Mensaje</label>
+                      <textarea id="message" rows="8" name="Message" class="form-control" required placeholder="Escribe un mensaje..."></textarea>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                      <button type="submit" class="btn btn-outline-danger px-5">Enviar</button>
+                    </div>
+                  </div>
+                </form>
+                <div id="success-message" class="alert alert-success mt-3" style="display: none;">
+                  Correo enviado con éxito
+                </div>
+              </div>
+            </div>
+    </section>
     <footer id="contacto" class="social-media" style="text-align: center;">
         <h1 class="my-4 text-center">Puedes contactarme por: </h1>
         <a target="_blank" href="https://www.facebook.com/profile.php?id=61556443884219&mibextid=ZbWKwL"><i
