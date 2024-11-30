@@ -641,20 +641,39 @@ body {
 .custom-caption h2, .custom-caption h4 {
   color: black;
 }
-
+/* Ajuste del tamaño de las tarjetas */
 .card {
-  height: 100%;
-}
-.card-body {
+  width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+  max-width: 700px; /* Aumenta el ancho máximo de las tarjetas (más amplio que antes) */
+  height: 400px; /* Ajusta la altura de las tarjetas */
+  margin: 15px; /* Espacio alrededor de cada tarjeta */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  justify-content: space-between; /* Distribuye el contenido dentro de la tarjeta */
 }
-.card-text {
-  margin-bottom: 20px;
+
+/* Configuración de los items dentro del carrusel */
+.carousel-item {
+  display: flex;
+  justify-content: center;  /* Centra las tarjetas horizontalmente */
+  align-items: center;      /* Centra las tarjetas verticalmente */
+  flex: 0 0 auto;           /* Evita que los items se estiren */
+  padding: 0 15px;          /* Espacio entre las tarjetas */
 }
+
+/* Estilo de las tarjetas dentro del carrusel */
+.carousel-item .card {
+  width: 100%;              /* Asegura que la tarjeta ocupe todo el ancho disponible */
+  max-width: 700px;         /* Aumenta el tamaño máximo de las tarjetas */
+  height: 400px;            /* Mantiene la altura constante */
+  margin: 0 auto;           /* Centra las tarjetas dentro de su contenedor */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido de forma adecuada */
+  overflow: hidden;         /* Evita que el contenido se desborde */
+  box-sizing: border-box;   /* Asegura que el padding no afecte al tamaño de la tarjeta */
+}
+
 .blockquote-footer {
   margin-top: 10px;
 }
@@ -724,4 +743,49 @@ body {
 }
 .text-center {
   text-align: center !important;
+}
+#Exito {
+  background-color: #121212;
+  padding: 60px 0;
+}
+
+.certificate-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 300px; /* Tamaño máximo del cuadro ajustado */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.certificate-card:hover img {
+  transform: scale(1.1); /* Aumenta el zoom al pasar el cursor */
+  transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+.certificate-card img.larger-img {
+  max-height: 600px; /* Incremento en la altura máxima de las imágenes */
+  object-fit: cover; /* Ajuste adecuado sin distorsión */
+  width: 100%; /* Ancho ajustado al cuadro */
+  border-radius: 10px; /* Bordes ligeramente redondeados */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0; /* Espaciado más cómodo */
+}
+
+.certificate-card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px; /* Tamaño de texto más grande */
+  text-align: center;
+  font-weight: bold;
 }

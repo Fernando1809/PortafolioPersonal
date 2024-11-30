@@ -126,3 +126,15 @@ document.querySelector('form').addEventListener('submit', function(event) {
         event.target.submit(); // Submit the form after showing the message
     }, 2000); // Wait for 2 seconds before submitting the form
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const certificateModal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modalImage');
+
+    document.querySelectorAll('[data-bs-img-src]').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita comportamiento por defecto del enlace
+        const imgSrc = link.getAttribute('data-bs-img-src');
+        modalImage.setAttribute('src', imgSrc);
+      });
+    });
+  });

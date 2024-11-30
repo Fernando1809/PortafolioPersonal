@@ -119,3 +119,16 @@ document.querySelector('form').addEventListener('submit', function(event) {
       alert('Por favor, complete todos los campos.');
     }
   });
+  document.addEventListener('DOMContentLoaded', () => {
+    const certificateModal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modalImage');
+
+    // When any link with data-bs-img-src is clicked
+    document.querySelectorAll('[data-bs-img-src]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default action of the link
+            const imgSrc = link.getAttribute('data-bs-img-src'); // Get the image source from data-bs-img-src
+            modalImage.setAttribute('src', imgSrc); // Set the modal image source
+        });
+    });
+});
