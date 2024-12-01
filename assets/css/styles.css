@@ -45,12 +45,12 @@ html {
 
 body {
   background-color: #1a1a1a; /* Color de fondo oscuro */
-  color: red; /* Color de texto claro */
+  color: purple; /* Color de texto claro */
 }
 
 /* Estilos para los enlaces */
 a {
-  color: red; /* Color de enlaces */
+  color: purple; /* Color de enlaces */
 }
 
 /* Estilos para el menú de navegación */
@@ -92,7 +92,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color:red;
+  background-color:purple;
 }
 
 .section {
@@ -153,20 +153,26 @@ body {
 }
 .nav__link {
   position: relative;
-  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Color del texto */
 }
+
 .nav__link:hover {
-  position: relative;
+  color: purple; /* Color al pasar el cursor */
 }
-.nav__link:hover::after {
+
+.nav__link.active::after {
+  content: '';
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
+  bottom: 0;
   left: 0;
-  top: 2rem;
-  background-color: red;
+  width: 100%;
+  height: 2px;
+  background-color: purple; /* Color de la línea */
 }
+
 .nav__logo {
   color: var(--second-color);
 }
@@ -184,7 +190,7 @@ body {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: red;
+  background-color: purple;
 }
 
 /*=== Show menu ===*/
@@ -206,7 +212,7 @@ body {
   margin-bottom: var(--mb-5);
 }
 .home__title-color {
-  color: red; /* Cambia el color a rojo */
+  color: purple; /* Cambia el color a rojo */
 }
 
 .home__social {
@@ -214,14 +220,15 @@ body {
   flex-direction: column;
 }
 .home__social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: red;
+  color: #000; /* Color inicial */
+  font-size: 2rem; /* Tamaño del ícono, ajusta según tu diseño */
+  transition: color 0.3s ease; /* Efecto de transición suave */
 }
+
 .home__social-icon:hover {
-  color: purple;
+  color: purple; /* Color morado cuando pasa el cursor */
 }
+
 .home__img {
   position: absolute;
   right: 0;
@@ -231,7 +238,55 @@ body {
 .home__blob {
   fill: purple;
 }
+#downloadButton {
+  background-color: purple; /* Fondo morado */
+  color: white; /* Texto blanco */
+  border: 2px solid purple; /* Borde morado */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a un dedo */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
 
+#downloadButton:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: purple; /* Texto morado */
+  border-color: purple; /* Mantiene el borde morado */
+}
+#translateButton {
+  background-color: purple; /* Fondo morado */
+  color: white; /* Texto blanco */
+  border: 2px solid purple; /* Borde morado */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a un dedo */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+#translateButton:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: purple; /* Texto morado */
+  border-color: purple; /* Mantiene el borde morado */
+}
+.btn.btn-outline-danger {
+  background-color: purple; /* Fondo morado */
+  color: white; /* Texto blanco */
+  border: 2px solid purple; /* Borde morado */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de la fuente */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  display: inline-block; /* Hace que el enlace se vea como un bloque de botón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.btn.btn-outline-danger:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: purple; /* Texto morado */
+  border-color: purple; /* Mantiene el borde morado */
+}
 
 /*BUTTONS*/
 .button {
@@ -529,6 +584,15 @@ body {
 .clients .mysql i:hover {
   color: blue; /* Cambia el color del ícono a azul cuando se hace hover */
 }
+.clients .java i:hover{
+  color: orange;
+}
+.clients .firebase i:hover{
+  color: red;
+}
+.clients .android i:hover{
+  color: greenyellow;
+}
 
 .rounded-img {
   border-radius: 50%;
@@ -540,19 +604,19 @@ body {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid red;
+  border: 2px solid purple;
   border-radius: 50%;
   font-size: 20px;
-  color: red;
+  color: purple;
   text-decoration: none;
   margin: 30px 15px 30px 0 ;
   transition: .5s ease;
 }
  
 .social-media a:hover {
-  background: red;
+  background: purple;
   color: #1f242d;
-  box-shadow: 0 0 20px red;
+  box-shadow: 0 0 20px purple;
 }
 .dark-mode {
   background-color: #121212;
@@ -618,7 +682,7 @@ body {
 }
 
 .nav__link:hover {
-  color: red; /* Color al pasar el ratón por encima */
+  color: purple; /* Color al pasar el ratón por encima */
 }
 .home__container {
   display: flex;

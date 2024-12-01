@@ -12,14 +12,18 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+// Seleccionamos todos los enlaces del menú
+const navLinks = document.querySelectorAll('.nav__link');
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+// Función para agregar la clase 'active' al enlace seleccionado
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        // Elimina la clase 'active' de todos los enlaces
+        navLinks.forEach(link => link.classList.remove('active'));
+        // Añade la clase 'active' al enlace clicado
+        this.classList.add('active');
+    });
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -138,3 +142,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+      // Obtiene el año actual y lo inserta en el elemento con id 'currentYear'
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
