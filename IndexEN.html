@@ -38,17 +38,23 @@
     <main class="l-main">
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Fernando,</span><br>Front End Developer
-                    <br>
-                    <div class="row" id="google_translate_element"></div>
-                    <button id="translateButton" class="btn btn-outline-danger" onclick="location.href='index.html';">Translate Page</button>
-                </nav>
-                    <button id="downloadButton" class="btn btn-outline-danger">Download CV</button>
-                    <h5>When things get tough, stop for a moment 
-                        <br>and look back, see how far you've come. 
-                          <br>
-                          <cite title="Source Title">-Kim Tae-hyung (V) of BTS</cite>
-                </h1>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Fernando González,</span><br>Project Manager and
+                          <br> Front End
+                            <br>Developer
+                            <div class="row" id="google_translate_element"></div>
+                            <button id="translateButton" class="btn btn-outline-danger" onclick="location.href='index.html';">Translate Page</button>
+                        </nav>
+                            <button id="downloadButton" class="btn btn-outline-danger">Download CV</button>
+                            <h5>When things get tough, stop for a moment 
+                                <br>and look back, see how far you've come. 
+                                  <br>
+                                  <cite title="Source Title">-Kim Tae-hyung (V) of BTS</cite>
+                        </h1>
+                    </div>
+                    <img src="./IMG/LOGO.png" alt="Logo" class="home__logo" style="width: 300px; margin-left: 50px;">
+                </div>
             </div>
                     
             <div class="home__social">
@@ -87,86 +93,118 @@
     <section class="work section" id="work">
         <h2 class="my-4 text-center">Projects</h2>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4 my-3">
-                    <div class="card text-bg-dark mb-3 h-100">
-                        <img src="./IMG/Bubblepets.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h1 class="card-title">BubblePets</h1>
-                            <p class="card-text">
-                                BubblePets is like Tinder, but for pets. It allows pet owners to find furry companions based on shared interests. Users create profiles for their pets, swipe right to express interest, and arrange meetings. A fun and social way to connect pet lovers.</p>
-                            <hr>
-                            <p class="card-text">Role played: Designer </p>
-                            <a href="https://github.com/wilsongutierrez-01/Bubble_Pet_xForce.git"
-                                class="btn btn-outline-danger" target="_blank"> View Repository</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-12 col-lg-4 my-3">
-                    <div class="card text-bg-dark mb-3 h-100">
-                        <img src="./IMG/DriveEduca.png" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h1 class="card-title">DriveEduca</h1>
-                            <p class="card-text">
-                                DriveEduca is dedicated to promoting good practices in road education through its website. It includes forums, chat, an interactive menu, contact platforms, and a search engine to access specific information. It offers an educational test and an interactive game to raise awareness about the risks of poor road education, thus promoting a safer road culture.</p>
-                            <hr>
-                            <p class="card-text">Role played: Front End Programmer</p>
-                            <a href="https://github.com/Fernando1809/DriveEduca" class="btn btn-outline-danger"
-                                target="_blank">View Repository</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Card 1 -->
                 <div class="col">
-                  <div class="card text-bg-dark h-100">
-                    <img src="./IMG/PathToy.png" class="card-img-top" alt="BubblePets">
-                    <div class="card-body text-center">
-                      <h1 class="card-title">PathToy</h1>
-                      <p class="card-text">
-                        PathToy is a platform that emerged from a university project. It is a Web Application designed to facilitate the donation, exchange and request of toys between users from various communities. The main idea behind PathToy is to foster solidarity and promote the reuse of toys in good condition, thus contributing to the reduction of waste and the well-being of children of all ages.
-                      </p>
-                      <hr>
-                      <p class="card-text">Role played: Designer</p>
-                      <a href="https://github.com/eliseolozanowp/PathToy"
-                        class="btn btn-outline-danger" target="_blank">View Repository</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4 my-3">
-                    <div class="card text-bg-dark mb-3 h-100">
-                        <img src="./IMG/PetLovers.png" class="card-img-top" alt="...">
+                    <div class="card text-bg-dark h-100">
+                        <img src="./IMG/Bubblepets.jpg" class="card-img-top" alt="BubblePets" style="height: 200px; object-fit: cover;">
                         <div class="card-body text-center">
-                            <h1 class="card-title">PetLovers</h1>
+                            <h5 class="card-title">BubblePets</h5>
+                            <p class="card-text">
+                                BubblePets is like Tinder, but for pets. It allows pet owners to find furry companions based on shared interests.
+                            </p>
+                            <hr>
+                            <p class="card-text">Role played: Designer</p>
+                            <a href="https://github.com/wilsongutierrez-01/Bubble_Pet_xForce.git"
+                                class="btn btn-outline-danger" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="./IMG/DriveEduca.png" class="card-img-top" alt="DriveEduca" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">DriveEduca</h5>
+                            <p class="card-text">
+                                DriveEduca is dedicated to promoting good practices in road education through its website. It includes
+                                forums, chat, and an interactive menu.
+                            </p>
+                            <hr>
+                            <p class="card-text">Role played: Front End Developer</p>
+                            <a href="https://github.com/Fernando1809/DriveEduca" class="btn btn-outline-danger" target="_blank">View
+                                Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="./IMG/PathToy.png" class="card-img-top" alt="PathToy" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PathToy</h5>
+                            <p class="card-text">
+                                PathToy is a platform that facilitates the donation, exchange, and request of toys between users from various communities.
+                            </p>
+                            <hr>
+                            <p class="card-text">Role played: Designer</p>
+                            <a href="https://github.com/eliseolozanowp/PathToy"
+                                class="btn btn-outline-danger" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="./IMG/PetLovers.png" class="card-img-top" alt="PetLovers" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PetLovers</h5>
                             <p class="card-text">
                                 Pet Lovers is a website dedicated to pet care. It offers news, information, and a space to interact with other animal lovers.
                             </p>
                             <hr>
-                            <p class="card-text">Role: Front End Developer</p>
-                            <a href="https://github.com/Fernando1809/PetLovers" class="btn btn-outline-danger" target="_blank">View Repository</a>
+                            <p class="card-text">Role played: Front End Developer</p>
+                            <a href="https://github.com/Fernando1809/PetLovers" class="btn btn-outline-danger"
+                                target="_blank">View Repository</a>
                         </div>
                     </div>
-                </div>                
-            <div class="col-12 col-lg-4 my-3">
-                <div class="card text-bg-dark mb-3 h-100">
-                    <img src="./IMG/Diversa-mente.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h1 class="card-title">Diversa-mente (Web and APK)</h1>
-                        <p class="card-text">
-                            It is a platform dedicated to mental health that promotes inclusion and well-being. It addresses topics such as neurodiversity and neurodivergence, offering accessible information, educational resources, and an interactive chatbot to provide emotional support to its users.
-                        </p>
-                        <hr>
-                        <p class="card-text">Role: Front/Back End Developer and Designer.</p>
-                        <a href="https://github.com/Fernando1809/Diversamente" class="btn btn-outline-danger" target="_blank">View Repository (Web)</a>
-                        <a href="https://github.com/Fernando1809/Diversamenteapk" class="btn btn-outline-danger" target="_blank">View Repository (APK)</a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="./IMG/Diversa-mente.png" class="card-img-top" alt="Diversa-mente" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Diversa-mente (Web and APK)</h5>
+                            <p class="card-text">
+                                It is a platform dedicated to mental health that promotes inclusion and well-being. It addresses topics such as
+                                neurodiversity and neurodivergence.
+                            </p>
+                            <hr>
+                            <p class="card-text">Role played: Front/Back End Developer and Designer</p>
+                            <a href="https://github.com/Fernando1809/Diversamente" class="btn btn-outline-danger"
+                                target="_blank">View Repository (Web)</a>
+                            <a href="https://github.com/Fernando1809/Diversamenteapk" class="btn btn-outline-danger"
+                                target="_blank">View Repository (APK)</a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Card 6 - Carrot Studio -->
+                <div class="col">
+                    <div class="card text-bg-dark h-100">
+                        <img src="./IMG/Logo Carrot Studio.png" class="card-img-top" alt="Carrot Studio" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Carrot Studio</h5>
+                            <p class="card-text">
+                                Professional Practice with the HydraTec team as part of the Digital Transformation project within the Electronic Business and Business Intelligence courses.
+                            </p>
+                            <hr>
+                            <p class="card-text">Role played: Project Manager</p>
+                            <a href="https://github.com/Robertoreyes-rgb/CARROT-STUDIOS" class="btn btn-outline-danger"
+                                target="_blank">View Repository</a>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                </div>                
+            </div>
+        </div>
     </section>    
     <section class="clients my-5" id="clients">
       <div class="container text-center">
-          <h2 class="my-4">Entornos de desarrollo</h2>
+          <h2 class="my-4">Development Environments</h2>
           <div class="row justify-content-center">
               <div class="col-md-2 js">
                   <i class="fab fa-js fa-3x"></i>
@@ -199,7 +237,11 @@
               <div class="col-md-2 android">
                 <i class="fab fa-android fa-3x"></i>
                 <p>Android Studio</p>
-            </div>
+              </div>
+              <div class="col-md-2 nodejs">
+                <i class="fab fa-node-js fa-3x"></i>
+                <p>Node.JS</p>
+              </div>
           </div>
       </div>
   </section>    
@@ -357,7 +399,7 @@
       <div class="col-md-3">
         <div class="card text-bg-dark h-100 text-center">
           <div class="card-body">
-            <img src="./IMG/Robotica.jpg" alt="">
+            <img src="./IMG/Robotica.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover;">
             <h3 class="card-title">Robotics</h3>
             <p class="card-text">I am passionate about exploring and working with circuits to create robots and develop innovative solutions.</p>
           </div>
@@ -366,7 +408,7 @@
       <div class="col-md-3">
         <div class="card text-bg-dark h-100 text-center">
           <div class="card-body">
-            <img src="./IMG/Redes.jpg" alt="">
+            <img src="./IMG/Redes.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover;">
             <h3 class="card-title">Networks</h3>
             <p class="card-text">I am interested in the design, implementation, and management of communication networks to ensure efficient and secure connectivity.</p>
           </div>
@@ -375,9 +417,9 @@
       <div class="col-md-3">
         <div class="card text-bg-dark h-100 text-center">
           <div class="card-body">
-            <img src="./IMG/MCU.jpg" alt="">
-            <h3 class="card-title">Marvel Cinematic Universe</h3>
-            <p class="card-text">I am a big fan of the Marvel Cinematic Universe and enjoy following the stories of its characters and movies.</p>
+            <img src="./IMG/software ibre.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover;">
+            <h3 class="card-title">Free Software</h3>
+            <p class="card-text">I am passionate about the world of free software and its philosophy of sharing knowledge, collaboration, and freedom in technological development.</p>
           </div>
         </div>
       </div>
@@ -387,8 +429,8 @@
         <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="card text-bg-dark h-100">
-                        <div class="card-body text-center">
+                    <div class="card text-bg-dark h-100" style="height: 400px;">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
                             <p class="card-text">He is a student with impeccable conduct. He has proven to be excellent in solving problems presented throughout the subjects I have taught him, committed, responsible, and diligent with his tasks. He has always shown concern for improving, training, and updating his knowledge. During this I-2024 cycle, he has performed excellently in the robotics subject, developing a robot based on free software and hardware. Therefore, I suggest you consider this recommendation with confidence, knowing he will always meet his commitments and responsibilities.</p>
                             <hr class="text-white">
                             <footer class="blockquote-footer text-white">Marvin Osmaro Parada <cite title="Source Title"><br>Full-time professor, Faculty of Science and Technology, UGB</cite></footer>
@@ -396,8 +438,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card text-bg-dark h-100">
-                        <div class="card-body text-center">
+                    <div class="card text-bg-dark h-100" style="height: 400px;">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
                             <p class="card-text">I have had the pleasure of working alongside Fernando González in recent months. His meticulous and organized approach stands out in every task he performs. He is exceptionally dedicated, always making sure to thoroughly understand concepts before applying them. His ability to manage time effectively allows him to balance academic and work responsibilities outstandingly. Furthermore, he shows constant commitment to quality, reviewing his work carefully to ensure it meets the highest standards. Without a doubt, his work ethic and rigorous study method are inspiring and significantly contribute to the success of his work.</p>
                             <hr class="text-white">
                             <footer class="blockquote-footer text-white">David Ernesto Cerna <cite title="Source Title"><br>Graduate in Systems and Network Engineering</cite></footer>
@@ -405,8 +447,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card text-bg-dark h-100">
-                        <div class="card-body text-center">
+                    <div class="card text-bg-dark h-100" style="height: 400px;">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
                             <p class="card-text">I have worked alongside Fernando González on several occasions during our training process, so I can confidently affirm that he is a thorough worker, with important skills for managing work groups, and he places great value on responsibility and quality. One of his greatest qualities is loyalty, which, along with his strong moral compass and impeccable work ethic, makes him someone anyone would want on their team.</p>
                             <hr class="text-white">
                             <footer class="blockquote-footer text-white">Adrian Ernesto Diaz <cite title="Source Title"><br>Student in Public Accounting</cite></footer>
@@ -414,8 +456,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card text-bg-dark h-100">
-                        <div class="card-body text-center">
+                    <div class="card text-bg-dark h-100" style="height: 400px;">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
                             <p class="card-text">He is a very cheerful, focused, and motivated person who strives to achieve his goals in the best possible way. He is self-taught, responsible, creative, and works well in a team. I had the opportunity to work with him on a few occasions, and I can say that he has a lot to contribute to the team, whether through his ideas or knowledge. I consider him an efficient and effective young man when it comes to work, and I highly recommend him for future jobs, as he is someone who can contribute greatly.</p>
                             <hr class="text-white">
                             <footer class="blockquote-footer text-white">José Walberto Rivas <cite title="Source Title"><br>Systems and Network Engineer</cite></footer>
@@ -479,16 +521,24 @@
 <style>
   .card {
     height: 100%;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    background-color: #1a1a1a;
+    padding: 10px;
   }
   .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-content: space-between;
   }
   .card-text {
-    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
   .blockquote-footer {
     margin-top: 10px;

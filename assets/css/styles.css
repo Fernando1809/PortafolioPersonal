@@ -594,6 +594,10 @@ body {
   color: greenyellow;
 }
 
+.clients .nodejs i:hover {
+  color: #339933; /* Color verde característico de Node.JS */
+}
+
 .rounded-img {
   border-radius: 50%;
 }
@@ -694,7 +698,41 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 20px;
 }
+
+.carousel-item .card {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-item .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
+
+.carousel-item .card-text {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.carousel-item hr.text-white {
+  margin: 15px 0;
+  width: 80%;
+}
+
+.carousel-item .blockquote-footer {
+  margin-top: 10px;
+}
+
 .card {
   max-width: 100%;
 }
